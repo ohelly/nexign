@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./db/lottery
+    username: test
+    password: qwerty
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+  h2:
+    console:
+      enabled: true
+lottery:
+  url: https://www.random.org
+  min: 1
+  max: 1000
